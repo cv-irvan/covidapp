@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Group_46" data-name="Group 46" transform="translate(-347 -782)">
+    <g id="Rectangle_37" data-name="Rectangle 37" transform="translate(347 782)" fill="#3fc78d" stroke="#3fc78d" stroke-width="1">
+      <rect width="40" height="40" rx="20" stroke="none"/>
+      <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="none"/>
+    </g>
+    <path id="Path_561" data-name="Path 561" d="M2294.713,813.088l6.489-6.548.944-.789v1.366l-.944,3.012-2.853,8.15-.705,1.6-1.267-2.672Z" transform="translate(-1929 -9)" fill="#fff"/>
+    <path id="Path_562" data-name="Path 562" d="M2288.734,809.538l12.219-4.2-.791,1.55-4.577,4.768-1.551,1.34-4.145-1.736-1.987-1.039Z" transform="translate(-1929 -9)" fill="#fff"/>
+    <g id="Icon_feather-send" data-name="Icon feather-send" transform="translate(355 792.357)">
+      <path id="Path_559" data-name="Path 559" d="M25.47,3,16.5,11.97" transform="translate(-6.161)" fill="none" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      <path id="Path_560" data-name="Path 560" d="M19.309,3,13.6,19.309,10.339,11.97,3,8.708Z" fill="none" stroke="#191919" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -9,3 +9,4 @@ part 'beritapage.dart';
 part 'dokterpage.dart';
 part 'homepage.dart';
 part 'detailBerita.dart';
+part 'chat.dart';
