@@ -8,3 +8,4 @@ part 'home.dart';
 part 'beritapage.dart';
 part 'dokterpage.dart';
 part 'homepage.dart';
+part 'detailBerita.dart';

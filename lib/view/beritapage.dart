@@ -102,63 +102,69 @@ class _BeritaPageState extends State<BeritaPage> {
     ));
   }
 
-  Container listBerita() {
-    return Container(
-      width: Sizeconfig.screenWidth - 20,
-      height: Sizeconfig.lebarLayar * 65,
-      decoration: BoxDecoration(
-          color: whiteColor,
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: [
-            BoxShadow(
-              blurRadius: 6,
-              color: blackColor.withOpacity(0.3),
-              offset: Offset(0, 3),
+  Widget listBerita() {
+    return InkWell(
+      onTap: () {
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => DetailBerita()));
+      },
+      child: Container(
+        width: Sizeconfig.screenWidth - 20,
+        height: Sizeconfig.lebarLayar * 65,
+        decoration: BoxDecoration(
+            color: whiteColor,
+            borderRadius: BorderRadius.circular(10),
+            boxShadow: [
+              BoxShadow(
+                blurRadius: 6,
+                color: blackColor.withOpacity(0.3),
+                offset: Offset(0, 3),
+              )
+            ]),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Container(
+              width: Sizeconfig.screenWidth - 20,
+              height: Sizeconfig.lebarLayar * 43,
+              decoration: BoxDecoration(
+                color: blackColor.withOpacity(0.1),
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(10),
+                  topRight: Radius.circular(10),
+                ),
+                image: DecorationImage(
+                  image: AssetImage('assets/hotnews.png'),
+                  fit: BoxFit.cover,
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
+              child: Text(
+                'Rumah Sakit Penuh',
+                style: GoogleFonts.poppins(
+                    textStyle: TextStyle(
+                  fontWeight: FontWeight.w500,
+                  color: textColor,
+                  fontSize: Sizeconfig.lebarLayar * 4.5,
+                )),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(10, 0, 10, 5),
+              child: Text(
+                '19/02/21  Rumah sakit saat ini Penuh Dengan Pasien Covid 19,  More…..',
+                style: GoogleFonts.poppins(
+                    textStyle: TextStyle(
+                  fontWeight: FontWeight.w300,
+                  color: textColor,
+                  fontSize: Sizeconfig.lebarLayar * 3.5,
+                )),
+              ),
             )
-          ]),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            width: Sizeconfig.screenWidth - 20,
-            height: Sizeconfig.lebarLayar * 43,
-            decoration: BoxDecoration(
-              color: blackColor.withOpacity(0.1),
-              borderRadius: BorderRadius.only(
-                topLeft: Radius.circular(10),
-                topRight: Radius.circular(10),
-              ),
-              image: DecorationImage(
-                image: AssetImage('assets/hotnews.png'),
-                fit: BoxFit.cover,
-              ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(10, 5, 10, 5),
-            child: Text(
-              'Rumah Sakit Penuh',
-              style: GoogleFonts.poppins(
-                  textStyle: TextStyle(
-                fontWeight: FontWeight.w500,
-                color: textColor,
-                fontSize: Sizeconfig.lebarLayar * 4.5,
-              )),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.fromLTRB(10, 0, 10, 5),
-            child: Text(
-              '19/02/21  Rumah sakit saat ini Penuh Dengan Pasien Covid 19,  More…..',
-              style: GoogleFonts.poppins(
-                  textStyle: TextStyle(
-                fontWeight: FontWeight.w300,
-                color: textColor,
-                fontSize: Sizeconfig.lebarLayar * 3.5,
-              )),
-            ),
-          )
-        ],
+          ],
+        ),
       ),
     );
   }
